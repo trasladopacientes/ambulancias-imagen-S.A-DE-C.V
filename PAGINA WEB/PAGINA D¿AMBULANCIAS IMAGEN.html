@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AMBULANCIAS IMAGEN S.A DE C.V. | Emergencias Médicas</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:#b80000;
+color:rgb(255, 255, 255);
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#111;
+padding:14px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url("IMG_9596 AMBULANCIAS.JPG");
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:46px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 28px;
+margin:10px;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.btn1{
+background:red;
+color:white;
+}
+
+.btn2{
+background:#b80000;
+color:white;
+}
+
+.btn3{
+background:#25D366;
+color:white;
+}
+
+.section{
+padding:70px 20px;
+text-align:center;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:260px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+justify-content:center;
+margin-top:30px;
+}
+
+.about img{
+width:420px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:500px;
+text-align:left;
+}
+
+.form{
+max-width:500px;
+margin:auto;
+margin-top:30px;
+}
+
+.form input,.form textarea{
+width:100%;
+padding:14px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.form button{
+background:#b80000;
+color:white;
+border:none;
+padding:15px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+width:100%;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.stat{
+font-size:32px;
+color:#b80000;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+color:white;
+padding:35px;
+text-align:center;
+margin-top:50px;
+}
+
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:red;
+color:white;
+padding:18px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+</style>
+
+<script>
+
+function enviarSolicitud(){
+
+var nombre=document.getElementById("nombre").value;
+var telefono=document.getElementById("telefono").value;
+var ubicacion=document.getElementById("ubicacion").value;
+var emergencia=document.getElementById("emergencia").value;
+
+var mensaje="🚑 SOLICITUD DE AMBULANCIA%0A%0A"+
+"Nombre: "+nombre+"%0A"+
+"Teléfono: "+telefono+"%0A"+
+"Ubicación: "+ubicacion+"%0A"+
+"Emergencia: "+emergencia;
+
+var url="https://wa.me/525559489469?text="+mensaje;
+
+window.open(url,"_blank");
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>🚑 AMBULANCIAS IMAGEN S.A DE C.V.</h2>
+<p>Servicio Profesional de Emergencias Médicas</p>
+
+</header>
+
+<nav>
+
+<a href="#">Inicio</a> <a href="#nosotros">Nosotros</a> <a href="#servicios">Servicios</a> <a href="#solicitar">Solicitar Ambulancia</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Emergencias Médicas 24/7</h1>
+
+<p>Ambulancias equipadas y paramédicos profesionales en Ciudad de México</p>
+
+<a class="btn btn1" href="#solicitar">🚑 PEDIR AMBULANCIA</a>
+
+<br>
+
+<a class="btn btn2" href="tel:5559489469">📞 Llamar</a>
+
+<a class="btn btn3" href="https://wa.me/525559489469">💬 WhatsApp</a>
+
+</section>
+
+<section class="section" id="nosotros">
+
+<div class="container">
+
+<h2>Sobre Nosotros</h2>
+
+<div class="about">
+
+<img src="ambulancias en fila r 1.jpg">
+
+<div class="about-text">
+
+<p>
+
+AMBULANCIAS IMAGEN S.A DE C.V. Somos una empresa especializada en servicios de traslado en ambulancia, dedicada a brindar transporte médico seguro, oportuno y de alta calidad para pacientes que requieren movilización entre hospitales, domicilios o centros médicos. Nuestro equipo está conformado por personal capacitado y unidades equipadas, lo que nos permite garantizar una atención profesional durante todo el traslado.ante emergencias en Ciudad de México.
+
+</p>
+
+<br>
+
+<p>
+
+Nuestro principal compromiso es proteger la vida, la seguridad y el bienestar de cada paciente. Trabajamos con responsabilidad, empatía y rapidez, asegurando que cada traslado se realice con los más altos estándares de atención médica, puntualidad y cuidado humano. Nos esforzamos diariamente por ofrecer un servicio confiable que brinde tranquilidad a pacientes, familias y profesionales de la salud.
+
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🚑 Emergencias Médicas</h3>
+<p>Atención inmediata las 24 horas.</p>
+</div>
+
+<div class="card">
+<h3>🏥 Traslados Hospitalarios</h3>
+<p>Traslado seguro entre hospitales.</p>
+</div>
+
+<div class="card">
+<h3>👨‍⚕️ Paramédicos</h3>
+<p>Personal capacitado y equipo profesional.</p>
+</div>
+
+<div class="card">
+<h3>🎪 Cobertura de Eventos</h3>
+<p>Ambulancias para eventos y empresas.</p>
+</div>
+
+</div>
+
+<div class="stats">
+
+<div>
+<div class="stat">24/7</div>
+Servicio permanente
+</div>
+
+<div>
+<div class="stat">+1500</div>
+Traslados
+</div>
+
+<div>
+<div class="stat">+50</div>
+médicos
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="solicitar">
+
+<h2>Solicitar Ambulancia</h2>
+
+<div class="form">
+
+<input id="nombre" type="text" placeholder="Nombre del paciente">
+
+<input id="telefono" type="tel" placeholder="Teléfono">
+
+<input id="ubicacion" type="text" placeholder="Dirección o ubicación">
+
+<textarea id="emergencia" placeholder="Describe la emergencia"></textarea>
+
+<button onclick="enviarSolicitud()">Enviar Solicitud por WhatsApp</button>
+
+</div>
+
+</section>
+<section class="section" id="ubicacion">
+
+<h2>📍 Ciudad de México</h2>
+
+
+<iframe 
+src="https://www.google.com/maps?q=Tizimin+22+Lomas+de+Padierna+Tlalpan+CDMX&output=embed"
+width="100%" 
+height="300">
+</iframe>
+
+
+<footer>
+
+<h3>AMBULANCIAS IMAGEN S.A DE C.V.</h3>
+
+<p>📍 CIUDAD DE MEXICO TIZIMIN No 22 COL. LOMAS DE PADIERNA C.P 14240, DELEGACION TLALPAN CDMX </p>
+
+<p>📞 5559489469 o 5559489466</p>
+
+<p>🚑 Servicio de Ambulancias 24/7</p>
+
+</footer>
+
+<a class="float" href="tel:5559489469">🚨 EMERGENCIA</a>
+
+</body>
+</html>
